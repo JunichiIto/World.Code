@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="c.ico">
+    <title>World.Code</title>
+    <%= stylesheet_link_tag "en.css" %>
+    <%= stylesheet_link_tag "en2.css" %>
+    <%= stylesheet_link_tag "original.css" %>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">World.Code</div>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "トップ", main_index_path %></li>
+            <li><%= link_to "投稿", new_submit_path %></li>
+            <li><%= link_to "ヘルプ", about_index_path %></li>
+          </ul>
+	  <ul class="user">
+	    <% unless user_signed_in? %>
+	      <%= link_to "ログイン", new_user_session_path %>
+	      <%= link_to "新規登録", new_user_registration_path %></li>
+	    <% end %>
+	    <% if user_signed_in? %>
+	      <%= link_to "ログアウト", destroy_user_session_path, :method => :delete %>
+	    <% end %>
+	  </ul>
+	</div>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>

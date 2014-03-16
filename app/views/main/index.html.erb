@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-16 col-sm-9">
+      <p class="pull-right visible-xs"></p>
+      <div class="jumbotron">
+        <h1>World.Code</h1>
+        <p>World.Codeはアマチュア向けのソースコード共有サービスです。利用を開始するには、<%= link_to "ログイン", new_user_session_path %>または<%= link_to "新規登録", new_user_registration_path %>を行ってください。利用方法や概要については、<%= link_to "ヘルプ", about_index_path %>を参照してください。</p>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-7 col-lg-7">
+          <div align="center">
+	    <h2>本日のプログラミング問題</h2>
+          </div>
+          <div class="highlight">
+            <pre>
+HelloWorldを10回表示させるプログラムを1行で書いてください。
+ただし言語は不問です。
+
+出力：
+HelloWorld
+HelloWorld
+HelloWorld
+HelloWorld
+HelloWorld
+HelloWorld
+HelloWorld
+HelloWorld
+HelloWorld
+HelloWorld
+
+ヒント：HelloWorldの文字列を出力する命令を１０回繰り返します。
+	    </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+    <div class="list-group">
+      <div align="center">
+        <a class="twitter-timeline" href="https://twitter.com/gbuibg" data-widget-id="441200173889249280">@gbuibg からのツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div>
+</div>

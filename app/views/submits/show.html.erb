@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= simple_format(@submit.description) %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @submit.language %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= simple_format(@submit.source) %>
+</p>
+
+<%= link_to 'Edit', edit_submit_path(@submit) %> |
+<%= link_to 'Back', submits_path %>

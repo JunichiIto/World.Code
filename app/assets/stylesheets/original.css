@@ -1,0 +1,25 @@
+.user {
+	float: right;
+	padding-top: 16px;
+}
+.user a {
+	color: #999;
+	text-decoration: none;
+}
+.user a:hover {
+	color: #fff;
+}
+.form input {
+	border-radius: 5px;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #cccccc;
+}
+.modal-footer input {
+	border-radius: 5px;
+	color: #fff;
+	background-color: #0077bb;
+	height: 35px;
+	width: 110px;
+	border-style: none;
+}

@@ -1,0 +1,29 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div align="center">
+        <h4 class="modal-title" id="myModalLabel">ログイン</h4>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div align="center">
+        <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+        <div class="form"><strong>メールアドレス</strong><br />
+          <%= f.email_field :email, :autofocus => true %>
+        </div><br>
+        <div class="form"><strong>パスワード</strong><br />
+          <%= f.password_field :password %>
+        </div><br>
+        <% if devise_mapping.rememberable? -%>
+          <div><%= f.check_box :remember_me %><strong> パスワードを記憶</strong></div>
+        <% end -%>
+        <div class="modal-footer">
+          <div><%= f.submit "ログイン" %></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

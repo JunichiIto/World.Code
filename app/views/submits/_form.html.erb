@@ -1,0 +1,29 @@
+<%= form_for(@submit) do |f| %>
+  <% if @submit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@submit.errors.count, "error") %> prohibited this submit from being saved:</h2>
+
+      <ul>
+      <% @submit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br>
+    <%= f.select :language, {"Text" => "text", "ActionScript" => "acs", "C" => "c", "C#" => "csh", "C++" => "cpp", "CoffeeScript" => "cs", "CSS" => "css", "Haskell" => "haskell", "HTML" => "html", "Java" => "java", "JavaScript" => "js", "Lua" => "lua", "Objective-C" => "objc", "Perl" => "perl", "PHP" => "php", "Python" => "python", "Ruby" => "ruby", "Scala" => "scala", "Scheme" => "scheme", "SQL" => "sql", "AppleScript" => "aps", "Arduino" => "arduino", "ASP" => "asp", "COBOL" => "cobol", "D" => "d", "F#" => "fsh", "Go" => "go", "Haml" => "haml", "Objective-J" => "objj", "HTTP" => "http", "J" => "j", "JSON" => "json", "Makefile" => "mf", "Monkey" => "monkey", "OpenCL" => "ocl", "PowerShell" => "ps", "R" => "r", "RDoc" => "rdoc", "RHTML" => "HTML", "Sass" => "sass", "SCSS" => "scss", "Shell" => "shell", "Tcl" => "tcl", "VisualBasic" => "vb", "XML" => "xml", "YAML" => "yaml"} %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_area :source %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
