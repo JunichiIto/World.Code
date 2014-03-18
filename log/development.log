@@ -14874,3 +14874,666 @@ Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-13 20:44:44 +
 
 
 Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-13 20:44:44 +0900
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-16 15:20:23 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 106ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-16 15:20:24 +0900
+
+
+Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-16 15:20:24 +0900
+
+
+Started GET "/assets/en2.css?body=1" for 127.0.0.1 at 2014-03-16 15:20:24 +0900
+
+
+Started GET "/main/c.ico" for 127.0.0.1 at 2014-03-16 15:20:24 +0900
+
+ActionController::RoutingError (No route matches [GET] "/main/c.ico"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (80.5ms)
+
+
+Started GET "/submits/new" for 127.0.0.1 at 2014-03-16 15:20:28 +0900
+Processing by SubmitsController#new as HTML
+  Rendered submits/_form.html.erb (43.0ms)
+  Rendered submits/new.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 70ms (Views: 61.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/submits/c.ico" for 127.0.0.1 at 2014-03-16 15:20:29 +0900
+Processing by SubmitsController#show as 
+  Parameters: {"id"=>"c"}
+  [1m[35mSubmit Load (0.7ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "c"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Submit with id=c):
+  app/controllers/submits_controller.rb:67:in `set_submit'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.1ms)
+
+
+Started POST "/submits" for 127.0.0.1 at 2014-03-16 15:21:00 +0900
+Processing by SubmitsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ztPsZSAA7kPl4zaprrGSG3/QkBAHaolOompZXEP2nc=", "submit"=>{"description"=>"HelloWorld", "language"=>"ruby", "source"=>"puts \"HelloWorld\""}, "commit"=>"Create Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.2ms)[0m  INSERT INTO "submits" ("created_at", "description", "language", "source", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 16 Mar 2014 06:21:00 UTC +00:00], ["description", "HelloWorld"], ["language", "ruby"], ["source", "puts \"HelloWorld\""], ["updated_at", Sun, 16 Mar 2014 06:21:00 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/submits/1
+Completed 302 Found in 22ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:21:00 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.3ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered submits/show.html.erb within layouts/application (87.1ms)
+Completed 500 Internal Server Error in 95ms
+
+ActionView::Template::Error (unknown attribute: submit_id):
+    15:   <%= simple_format(@submit.source) %>
+    16: </p>
+    17: 
+    18: <%= form_for ([@submit, @submit.responses.build]) do |f| %>
+    19:   <p>
+    20:     <br><%= f.text_field :content %>
+    21:   </p>
+  app/views/submits/show.html.erb:18:in `_app_views_submits_show_html_erb___3421903035731233587_70158795762300'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.3ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:25:34 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.5ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered submits/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    16: </p>
+    17: 
+    18: <h3>comments</h3>
+    19: <% @post.comments.each do |comment| %>
+    20:   <li><%= comment.content %></li>
+    21: <% end %>
+    22: <%= form_for ([@submit, @submit.responses.build]) do |f| %>
+  app/views/submits/show.html.erb:19:in `_app_views_submits_show_html_erb___3421903035731233587_70158776658700'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.2ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:29:36 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mResponse Load (0.6ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 22ms
+
+ActiveRecord::RecordNotFound (Couldn't find Response with id=1):
+  app/controllers/submits_controller.rb:13:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.7ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:30:48 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.4ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 18ms
+
+NameError (uninitialized constant SubmitsController::Post):
+  app/controllers/submits_controller.rb:13:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.9ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:31:34 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.2ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 24ms
+
+ActiveRecord::RecordNotFound (Couldn't find Response with id=1):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.3ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:34:11 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 41ms
+
+ActiveRecord::RecordNotFound (Couldn't find Response with id=1):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:34:12 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.2ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mResponse Load (0.1ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 17ms
+
+ActiveRecord::RecordNotFound (Couldn't find Response with id=1):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.8ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:34:13 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Response with id=1):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.7ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:35:12 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.2ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 21ms
+
+NoMethodError (undefined method `comments' for #<Submit:0x007f9e39f36b30>):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 15:35:31 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 32ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: submit_id):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.9ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 16:34:42 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.4ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 51ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: submit_id):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.7ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:26:14 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (1.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 58ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: submit_id):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.3ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:27:26 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.2ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError (undefined method `find' for #<Submit:0x007f9e3a5e9978>):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.5ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:28:27 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.2ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `find' for #<Submit:0x007f9e3c128d60>):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:28:42 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.2ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 31ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: submit_id):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:29:55 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered submits/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `responses' for nil:NilClass):
+    16: </p>
+    17: 
+    18: <h3>comments</h3>
+    19: <% @post.responses.each do |response| %>
+    20:   <li><%= response.content %></li>
+    21: <% end %>
+    22: <%= form_for ([@submit, @submit.responses.build]) do |f| %>
+  app/views/submits/show.html.erb:19:in `_app_views_submits_show_html_erb___3421903035731233587_70158776593780'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.7ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:32:29 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered submits/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `responses' for nil:NilClass):
+    16: </p>
+    17: 
+    18: <h3>comments</h3>
+    19: <% @post.responses.each do |response| %>
+    20:   <li><%= response.content %></li>
+    21: <% end %>
+    22: <%= form_for ([@submit, @submit.responses.build]) do |f| %>
+  app/views/submits/show.html.erb:19:in `_app_views_submits_show_html_erb___3421903035731233587_70158776593780'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.2ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:32:38 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 32ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: submit_id):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.3ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:33:34 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubmit Load (0.2ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 29ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: submit_id):
+  app/controllers/submits_controller.rb:14:in `show'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (89.4ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (122.0ms)
+
+
+Started GET "/submits/1" for 127.0.0.1 at 2014-03-16 22:34:45 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubmit Load (0.2ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered submits/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 9.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-16 22:34:45 +0900
+
+
+Started GET "/assets/en2.css?body=1" for 127.0.0.1 at 2014-03-16 22:34:45 +0900
+
+
+Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-16 22:34:45 +0900
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-16 22:35:04 +0900
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:04 +0900
+
+
+Started GET "/assets/en2.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:04 +0900
+
+
+Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:04 +0900
+
+
+Started GET "/submits/new" for 127.0.0.1 at 2014-03-16 22:35:05 +0900
+Processing by SubmitsController#new as HTML
+  Rendered submits/_form.html.erb (13.8ms)
+  Rendered submits/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:05 +0900
+
+
+Started GET "/assets/en2.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:05 +0900
+
+
+Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:05 +0900
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-16 22:35:09 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 44ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:09 +0900
+
+
+Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:09 +0900
+
+
+Started GET "/assets/en2.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:09 +0900
+
+
+Started GET "/users/c.ico" for 127.0.0.1 at 2014-03-16 22:35:09 +0900
+
+ActionController::RoutingError (No route matches [GET] "/users/c.ico"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.6ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (86.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-16 22:35:10 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:10 +0900
+
+
+Started GET "/assets/en2.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:10 +0900
+
+
+Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-16 22:35:10 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-18 22:53:29 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 34ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-18 22:53:33 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-18 22:53:33 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-18 22:53:36 +0900
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/original.css?body=1" for 127.0.0.1 at 2014-03-18 22:53:36 +0900
+
+
+Started GET "/assets/en2.css?body=1" for 127.0.0.1 at 2014-03-18 22:53:36 +0900
+
+
+Started GET "/assets/en.css?body=1" for 127.0.0.1 at 2014-03-18 22:53:36 +0900
+
+
+Started GET "/main/c.ico" for 127.0.0.1 at 2014-03-18 22:53:37 +0900
+
+ActionController::RoutingError (No route matches [GET] "/main/c.ico"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.6ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.4ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (225.2ms)
+
+
+Started GET "/submits/new" for 127.0.0.1 at 2014-03-18 22:53:38 +0900
+Processing by SubmitsController#new as HTML
+  Rendered submits/_form.html.erb (39.3ms)
+  Rendered submits/new.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 63ms (Views: 53.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/submits/c.ico" for 127.0.0.1 at 2014-03-18 22:53:38 +0900
+Processing by SubmitsController#show as 
+  Parameters: {"id"=>"c"}
+  [1m[35mSubmit Load (0.8ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "c"]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Submit with id=c):
+  app/controllers/submits_controller.rb:67:in `set_submit'
+
+
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/user/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.9ms)
+
+
+Started POST "/submits" for 127.0.0.1 at 2014-03-18 22:53:59 +0900
+Processing by SubmitsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Tpj2iW8FLHWF2sbzPHdL/UXJfJNBkmKVW4WAJPcqV8=", "submit"=>{"description"=>"変数strを出力", "language"=>"ruby", "source"=>"puts str"}, "commit"=>"Create Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "submits" ("created_at", "description", "language", "source", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 18 Mar 2014 13:53:59 UTC +00:00], ["description", "変数strを出力"], ["language", "ruby"], ["source", "puts str"], ["updated_at", Tue, 18 Mar 2014 13:53:59 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/submits/2
+Completed 302 Found in 18ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/submits/2" for 127.0.0.1 at 2014-03-18 22:53:59 +0900
+Processing by SubmitsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSubmit Load (0.4ms)[0m  SELECT "submits".* FROM "submits" WHERE "submits"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered submits/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 78ms (Views: 12.6ms | ActiveRecord: 0.4ms)
