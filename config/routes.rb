@@ -1,8 +1,8 @@
 WorldCode::Application.routes.draw do
-  resources :responses
-
   get "about/index"
-  resources :submits
+  resources :submits do
+    resources :responses
+  end
 
   devise_for :users
   get "main/index"
