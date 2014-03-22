@@ -28,7 +28,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
-gem 'rspec-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -46,3 +45,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+  gem "rspec-rails", "~> 2.14.0"
+end
+
+group :test do
+  gem "capybara", "~> 2.1.0"
+  gem "launchy", "~> 2.3.0"
+end
