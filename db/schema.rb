@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140311122901) do
+ActiveRecord::Schema.define(version: 20140322195748) do
 
   create_table "responses", force: true do |t|
     t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "submit_id"
   end
+
+  add_index "responses", ["submit_id"], name: "index_responses_on_submit_id"
 
   create_table "submits", force: true do |t|
     t.text     "description"
